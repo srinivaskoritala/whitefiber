@@ -131,22 +131,6 @@ python3 task_scheduler.py sample_tasks.csv --run
 python3 task_scheduler.py complex_tasks.csv --run
 ```
 
-### Test Results
-
-All tests are **PASSING** with excellent performance:
-
-| Test Category | Status | Performance |
-|---------------|--------|-------------|
-| **Basic Validation** | ✅ PASS | Dependency resolution working |
-| **Task Execution** | ✅ PASS | 12.00s expected vs 12.05s actual |
-| **Complex Dependencies** | ✅ PASS | 13.00s expected vs 13.05s actual |
-| **Error Handling** | ✅ PASS | Missing and circular dependency detection |
-| **CSV Parsing** | ✅ PASS | File format validation |
-
-**Performance Metrics:**
-- **Threading Overhead**: <0.1% of total execution time
-- **Dependency Resolution**: 100% accurate
-- **Error Detection**: 100% coverage
 
 ## Error Handling
 
@@ -170,18 +154,3 @@ $ python3 task_scheduler.py circular_tasks.csv --validate
 Task validation failed:
   - Circular dependency detected: Circular dependency detected
 ```
-
-## Performance Considerations
-
-- **Threading overhead**: Small tasks may show slight timing differences due to thread creation overhead
-- **System load**: Actual execution times may vary based on system performance and load
-- **Precision**: Timing precision is limited by system clock resolution
-- **Parallel efficiency**: Independent task chains run simultaneously for optimal performance
-
-## Contributing
-
-Feel free to submit issues, feature requests, or pull requests to improve the tool.
-
-## License
-
-This project is open source and available under the MIT License.
