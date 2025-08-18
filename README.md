@@ -2,16 +2,6 @@
 
 A command line tool to schedule and optionally run a series of tasks in parallel, according to a task list specification with dependencies.
 
-**Author**: Srinivas k
-
-## Features
-
-- **Dependency Management**: Tasks can depend on other tasks, ensuring proper execution order
-- **Parallel Execution**: Independent tasks run simultaneously for optimal performance
-- **Validation**: Check task lists for circular dependencies and missing references
-- **Runtime Analysis**: Compare expected vs actual execution times
-- **CSV Input**: Simple text-based task specification format
-- **Error Handling**: Comprehensive validation with clear error messages
 
 ## Quick Start
 
