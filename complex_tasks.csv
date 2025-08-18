@@ -1,0 +1,13 @@
+# Complex task example with parallel execution
+frontend_setup,1,
+frontend_build,3,frontend_setup
+frontend_test,2,frontend_build
+backend_setup,1,
+backend_build,4,backend_setup
+backend_test,3,backend_build
+backend_deploy,1,backend_test
+db_setup,2,
+db_migrate,3,db_setup
+db_seed,2,db_migrate
+integration_test,5,frontend_test,backend_deploy,db_seed
+final_deploy,2,integration_test

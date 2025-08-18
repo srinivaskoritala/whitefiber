@@ -1,0 +1,6 @@
+# Sample task definitions
+setup,2,
+compile,5,setup
+test_unit,3,compile
+test_integration,4,compile
+deploy,2,test_unit,test_integration
