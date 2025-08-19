@@ -18,11 +18,6 @@ python3 task_scheduler.py sample_tasks.csv --validate
 python3 task_scheduler.py sample_tasks.csv --run
 ```
 
-## Requirements
-
-- Python 3.6 or higher
-- No external dependencies (uses only Python standard library)
-
 ## Installation
 
 1. Clone or download the repository
